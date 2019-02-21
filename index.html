@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadura Binaria</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                 <img src="img/logo.png" alt="" width="50">
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="caja-opciones" id="opciones">
+                <div class="opciones">
+                    <button>Binario</button>
+                    <button>Hexadecimal</button>
+                    <button>Decimal</button>
+                </div>
+
+                <div class="flecha">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                </div> 
+
+                <div class="subOpciones" id="subOpciones">
+                    <div class="block">
+                        <button>Hexadecimal</button>
+                        <button>Decimal</button>
+                    </div>
+
+                    <div class="none">
+                        <button>Binario</button>
+                        <button>Decimal</button>
+                    </div>
+
+                    <div class="none">
+                        <button>Binario</button>
+                        <button>Hexadecimal</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trabajo">
+                <form action="" method="post" name="traductor" id="traductor" class="Binario-Decimal">
+                    <textarea name="escribir" id="escribir" cols="30" rows="10" placeholder="Escribe..."></textarea>
+                    <input type="button" name="aceptar" id="aceptar" value="Aceptar">
+                </form>
+
+                <div class="generar" id="generar">
+                    
+                    <div class="resultado" id="resultado">
+                        <p id="texto-resultado"></p>
+                    </div>
+
+                    <button id="copiar"><i class="fas fa-copy"></i>Copiar texto</button>    
+                </div>
+                
+            </div>
+        </div>
+
+        <footer>
+            <p>Daniel Mendoza - theskip98@gmail.com</p>
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            
+        </footer>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

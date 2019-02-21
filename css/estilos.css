@@ -1,0 +1,233 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+button, input[type = 'button']{
+    border:none;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    background: #edeeee;
+    box-shadow: 5px 2px 5px #AAAAAA; 
+}
+
+button:hover,input[type = 'button']:hover{
+    background: #333636;
+    color:#AAAAAA;
+}
+/*-------------------------------------------------------------------------*/
+/*Pie de pagina*/
+/*-------------------------------------------------------------------------*/
+header{
+    background: #edeeee;
+    widows: 100%;
+
+    box-shadow: 5px 2px 5px #AAAAAA; 
+}
+
+header .logo{
+    width: 300px;
+    margin: auto;
+}
+
+header .logo img{
+    /* border-radius: 50%; */
+    width: 100%;
+    display: block;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Principal*/
+/*-------------------------------------------------------------------------*/
+.main {
+    margin: 10px;
+
+}
+.main .caja-opciones{
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.main .caja-opciones .opciones{
+    /* width: 40%; */
+    margin: 2px 1%;
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .caja-opciones .subOpciones{
+    flex: 1;
+    margin: 2px 1%;
+}
+
+.main .caja-opciones .opciones button{
+    width: 35%;
+    padding: 10px;
+}
+
+.main .caja-opciones .subOpciones div{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.main .caja-opciones .subOpciones div button{
+    width: 50%;
+    padding: 10px;
+}
+
+
+.main .caja-opciones .flecha{
+    font-size: 30px;
+    color:  #333636;;
+}
+
+.main .caja-opciones .fa-arrow-alt-circle-down{
+    display: none;
+}
+
+.main .trabajo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .trabajo form, .main .trabajo .generar {
+    background: #edeeee;
+    box-shadow: 2px 3px 6px 3px #AAAAAA;
+    border-radius: 10px;
+    width: 48%;
+    margin: 1%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+} 
+
+.main .trabajo form textarea{
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 3px 5px #AAAAAA;
+    border-radius: 20px;
+    resize: vertical;
+	max-height: 200px;
+	min-height: 120px;
+}
+
+.main .trabajo form input[type = 'button']{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;  
+    margin: 10px  auto;
+    box-shadow: 2px 2px 5px 1px #AAAAAA;
+
+}
+
+.main .trabajo .generar .resultado{
+    background: #fff;
+    box-shadow: 1px 3px 5px #AAAAAA;
+    width: 100%;
+    padding: 5px;
+    height:180px; 
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.main .trabajo .generar .resultado p{
+    padding: 5px;
+}
+
+.main .trabajo .generar button{
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Pie de pagina*/
+/*-------------------------------------------------------------------------*/
+footer{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+footer .redes a{
+    text-decoration: none;
+    color:#AAAAAA;
+    margin: 20px;
+    font-size: 30px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Repositive*/
+/*-------------------------------------------------------------------------*/
+@media screen and (max-width:600px){
+
+    header .logo{
+        width: 100%;
+        /* margin: auto; */
+    }
+    
+    .main .caja-opciones{
+        flex-direction: column;
+    } 
+
+    .main .caja-opciones .opciones,.main .caja-opciones .subOpciones{
+        width: 100%;    
+    } 
+
+    .main .caja-opciones .fa-arrow-alt-circle-down{
+        display:block;
+        margin: 10px;   
+    }   
+
+    .main .caja-opciones .fa-arrow-alt-circle-right{
+        display: none;
+    }
+
+    .main .trabajo{
+        flex-direction: column;
+    }
+
+    .main .trabajo form, .main .trabajo .generar{
+        width: 100%;
+        margin:10px auto;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*JavaScript*/
+/*-------------------------------------------------------------------------*/
+.main .caja-opciones .subOpciones .none{
+    display: none;
+}
+
+.press{
+    background: #333636;
+    color:#AAAAAA;
+}
